@@ -16,14 +16,23 @@
   </head>
   <body>
     <h1>BMI-Rechner</h1>
+    <!-- Kein <form> Element, da sonst das JavaScript nicht funktioniert (Abschicken/post vs. JS) -->
     <div id="form">
+      <label for="alter"><strong>Alter</strong> (in Jahren)</label>
+      <input type="number" name="alter" id="alter" value="30" />
+
       <label for="größe"><strong>Größe</strong> (in m)</label>
       <input type="number" step="0.01" name="größe" id="größe" value="1.80" />
+
       <label for="gewicht"><strong>Gewicht</strong> (in kg)</label>
       <input type="number" step="0.1" name="gewicht" id="gewicht" value="80" />
+
       <label for="bmi"><strong>BMI</strong></label>
       <input type="number" name="bmi" id="bmi" value="0" />
+
+      <!-- Anzeige Gewichtsklasse in entsprechender Hintergrundfarbe -->
       <div id="info"></div>
+
       <button onclick="calcBMI()">Berechnen</button>
     </div>
   </body>
