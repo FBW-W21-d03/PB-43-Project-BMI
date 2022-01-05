@@ -6,7 +6,7 @@ function calcBMI() {
     document.getElementById("result").innerHTML = "Your BMI is: " + (mass / height / height).toFixed(2);
 
 
-    if (mass == "" || height == "") {
+    if (mass == "" || (height == "" || height == !Number.isNaN(Number.parseFloat))) {
     
         return alert("Please enter a valid Mass and Height.");
     
