@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>project-BMI</title>
+</head>
+
+<body>
+
+    <h1>Body mass index (BMI) Calculator</h1>
+
+    <p>Body mass index (BMI) is a measure of body fat based on height and weight that applies to adult men and women.
+    </p>
+
+    <fieldset>
+
+        <legend>Mass Calculator</legend>
+
+        <label for="mass">Your Mass in kg: </label>
+        <input id="mass" type="text" placeholder="Your Body mass">
+
+        <label for="height">Your height in m: </label>
+        <input id="height" type="text"  placeholder="Your Body Height">
+
+        <button type="submit" onclick="calcBMI();">Calculate</button>
+
+        <p id="result">Calculate... </p>
+
+    </fieldset>
+
+    <table class="body">
+        <tbody>
+            <tr>
+                <td class="cinfoHd">Category</td>
+                <td class="cinfoHdL">BMI range - kg/m<sup>2</sup></td>
+            </tr>
+            <tr>
+                <td>Severe Thinness</td>
+                <td class="cinfoBodL">&lt; 16</td>
+            </tr>
+            <tr>
+                <td>Moderate Thinness</td>
+                <td class="cinfoBodL">16 - 17</td>
+            </tr>
+            <tr>
+                <td>Mild Thinness</td>
+                <td class="cinfoBodL">17 - 18.5</td>
+            </tr>
+    
+            <tr>
+                <td>Normal</td>
+                <td class="cinfoBodL">18.5 - 25</td>
+            </tr>
+            <tr>
+                <td>Overweight</td>
+                <td class="cinfoBodL">25 - 30</td>
+            </tr>
+            <tr>
+                <td>Obese Class I</td>
+                <td class="cinfoBodL">30 - 35</td>
+            </tr>
+            <tr>
+                <td>Obese Class II</td>
+                <td class="cinfoBodL">35 - 40</td>
+            </tr>
+            <tr>
+                <td>Obese Class III</td>
+                <td class="cinfoBodL">&gt; 40</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <footer>
+        <p>
+            <small>&copy; 2021 Orhan Kadirov. All rights reserved.</small>
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
