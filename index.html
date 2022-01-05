@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Luxurious+Roman&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/39413efdb8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Der Body-Mass-Index</title>
+</head>
+<div id="myPage">
+<body>
+    <h1>Der Body-Mass-Index</h1>
+    <img src="m1.jpg" alt="Body-Mass bild">
+    <p> Der Body-Mass-Index (BMI) ist eine Maßzahl zur Beurteilung des Körpergewichts. Er ergibt sich aus Körpergewicht
+        in Kilogramm geteilt durch die Körpergröße in Meter zum Quadrat. Allerdings ist der BMI alleine nur bedingt
+        aussagekräftig, da er nichts über die Körperzusammensetzung der Person aussagt. So können sehr große oder kleine
+        Menschen sowie Menschen mit hohem Muskelanteil einen erhöhten BMI aufweisen und dennoch nicht übergewichtig
+        sein.
+
+    </p>
+    <h2> Wie wird der BMI berechnet?</h2>
+
+    <p>
+
+        Wie wird der BMI berechnet?
+        Body Mass Index (kg/m²) = Körpergewicht in Kilogramm (kg) : Körpergröße in Meter zum Quadrat (m²)
+
+        Bei einer Person mit der Körpergröße von 170 cm und dem Körpergewicht von 70 kg errechnet sich der BMI-Wert
+        folgendermaßen: BMI-Wert = 70 kg : (1,7 m x 1,7 m) = 24,2 kg/ m²
+
+        Laut Weltgesundheitsorganisation (WHO) gilt ein Body-Mass-Index
+
+        ab 25 kg/m² als Übergewicht und ein
+        BMI von 30 kg/m² und höher als Adipositas.
+        Der Normalbereich liegt zwischen den Werten 18,5 bis 24,9 kg/m²
+        Liegt der Wert unterhalb von 18,5 kg/m², spricht man von Untergewicht.
+
+        Auf der Website der Deutschen Adipositas Gesellschaft finden Sie einen BMI-Rechner für Erwachsene sowie einen
+        BMI-Rechner für Kinder und Jugendliche (inkl. Berücksichtigung der Perzentilen).
+
+    </p>
+    <h2>Weshalb ist der BMI nur bedingt aussagekräftig?</h2>
+    <p>
+
+
+        Der BMI alleine ist nur wenig aussagekräftig und sagt nichts über die Körperzusammensetzung aus. So kann z.B.
+        eine sportlich aktive Person mit einem BMI von 26 und einem hohen Muskelanteil nicht als übergewichtig
+        betrachtet werden. Auch wenn diese laut BMI-Einteilung in die Kategorie „übergewichtig“ fällt. Bei sehr großen
+        oder kleinen Menschen ist der BMI ebenfalls nur begrenzt aussagekräftig. Zu berücksichtigen ist, dass sich der
+        BMI mit zunehmendem Alter erhöht.
+
+        Weitere Informationen erhalten Sie auf der Website der Österreichischen Gesellschaft für Ernährung (ÖGE).
+    </p>
+    <table class="table table-success table-striped">
+        <thead>
+            <tr>
+                <th scope="col">Kategorie</th>
+                <th scope="col">BMI</th>
+                <th scope="col"></th>
+                <th scope="col">Körpergewicht</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">starkes Untergewicht</th>
+                <td>
+                    <= 16,0</td> <td>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <th scope="row">mäßiges Untergewicht </th>
+                <td>16,0-17,0</td>
+                <td></td>
+                <td>Untergewicht</td>
+            </tr>
+            <tr>
+                <th scope="row">leichtes Untergewicht</th>
+                <td colspan="2">17,0-18,5</td>
+                <td></td>
+            </tr>
+            <tr>
+                <th scope="row">Normalgewicht</th>
+                <td colspan="2">18,5-25,0</td>
+                <td>Normalgewicht</td>
+            </tr>
+            <tr>
+                <th scope="row">Präadipositas</th>
+                <td colspan="2">25,0-30,0</td>
+                <td>Übergewicht</td>
+            </tr>
+            <tr>
+                <th scope="row">Adipositas Grad |</th>
+                <td colspan="2">30,0-35,0</td>
+                <td></td>
+            </tr>
+            <tr>
+                <th scope="row">Adipositas Grad ||</th>
+                <td colspan="2">35,0-40,0</td>
+                <td>Adipositas</td>
+            </tr>
+            <tr>
+                <th scope="row">Adipositas Grad |||</th>
+                <td colspan="2"> >=40,0 </td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <footer>
+        <h3 id="wert">Wert</h3>
+        <input id="gewicht" type="text" placeholder="Gewicht angeben" required />
+        <input id="größe" type="text" placeholder="Größe in Metern angeben" />
+        <button onclick="rechner()">BMI-Rechner</button>
+        <script src="index.js"></script>
+    </footer>
+</div>
+</body>
+
+</html>
