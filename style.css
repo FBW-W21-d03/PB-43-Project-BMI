@@ -1,0 +1,38 @@
+#div {
+    text-align: center;
+    margin-right: 70%;
+    background-color: rgba(119, 159, 197, 0.698);
+    border-color: rgb(32, 18, 18);
+    border-style: double;
+    border-color: brown;
+}
+
+
+#img {
+    background-size: cover;
+     background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+    width: 100vw;
+   height: 50vh;
+   display: flex; 
+   justify-content: center; 
+   align-items: center;
+}
+body {
+    background-image: url(bilder/bmi-massband-mit-apfel-resdata4.jpg);
+    background-repeat: no-repeat;
+    opacity: 0.9;
+    background-position: center;
+    background-size: cover;    
+    
+}
+h2 {
+font-size:25px;
+color:rgba(34, 34, 53, 0.986);
+}
+p{
+    font-size:20px;
+}
+
+    
