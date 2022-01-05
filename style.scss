@@ -1,4 +1,13 @@
 body{
+    background-color: rgb(230, 230, 230);
+h1{
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+}
+h2{
+    font-family: 'Lato', sans-serif;
+}
+
     table,th,td{
         border: 1px solid black;
         font-size:20px;
@@ -16,11 +25,34 @@ body{
         justify-content: center;
         
     }
+    button{
+         margin-top: 0.4rem;
+    }
     button:hover{
         background-color:limegreen;
+       
     }
-        #heighKalc{
-            background-color:red;
-        }
-   
-}
+
+    #kalc{
+        border: 2px solid black;
+        font-size: 20px;
+    // display: flex;
+    // justify-content:center;
+    }
+        
+        #gradient-container {
+            display:flex;
+            justify-content:center;
+            margin-top: 2rem; // rückt alles etwas von der blauen Tabelle weg
+            position: relative; //  damit position: absolute funktioniert
+          }
+
+          #gradient {
+            width: 550px !important;
+            height: 286px !important;
+            position: absolute; // braucht "position: relative" im Eltern-Element
+            background-image: linear-gradient(90deg, #00cc00, #cc0000);
+            mix-blend-mode: overlay;
+
+
+}}

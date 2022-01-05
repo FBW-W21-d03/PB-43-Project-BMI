@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="style.css">
     <title>BMI</title>
     <link rel="shortcut icon" href="./fave.png" type="image/x-icon">
-
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/304489a0ed.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <h1>Der Body-Mass-Index (BMI)</h1>
@@ -53,14 +54,27 @@
        
 </table>  
 </div>
+ <!-- Container für Farbverlauf und Bild -->
+ <div id="gradient-container">
+    <!-- Farbverlauf -->
+    <div id="gradient"></div>
+    <!-- Dein Bild -->
+    <img
+      id="heighKalc"
+      src="./adipositas_bmi_dejpg_replacement_image.jpg"
+      alt="gewicht"
+    />
+  </div>
 
-<img id="heighKalc" src="./adipositas_bmi_dejpg_replacement_image.jpg" alt="gewicht">
+<div id="kalc">
         
    <h2>BMI Kalkulator:</h2>
-<input id="kilogram" type="number" placeholder="KG">
- <input id="height" type="number" placeholder="Höhe">
+<input id="kilogram" type="number" placeholder="KG"> Kilogramm <br>
+ <input id="height" type="number" placeholder="Höhe"> Meter <br>
         <button onclick="calculate()">Berechne</button>
         <span id="result"></span>
+        <span id="textResult"></span>
+    </div>
         <script src="index.js"></script>
 </body>
 </html>
