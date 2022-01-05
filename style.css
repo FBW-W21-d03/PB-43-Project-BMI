@@ -60,8 +60,8 @@ body #gradient {
   width: 550px !important;
   height: 286px !important;
   position: absolute;
-  background-image: -webkit-gradient(linear, left top, right top, from(#00cc00), to(#cc0000));
-  background-image: linear-gradient(90deg, #00cc00, #cc0000);
+  background-image: -webkit-gradient(linear, left top, right top, from(#cc3a00), color-stop(green), color-stop(#c70505), to(#cc0000));
+  background-image: linear-gradient(90deg, #cc3a00, green, #c70505, #cc0000);
   mix-blend-mode: overlay;
 }
 /*# sourceMappingURL=style.css.map */
