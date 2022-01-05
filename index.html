@@ -1,102 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BMI Rechner</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
-</head>
-<body>
-<h1>BMI Recner</h1>
-<section class="article-body">
 
-    <p>Auf dieser Seite erhalten Sie eine Übersicht verschiedener Tabellen zu der Einordnung des BMI. Um den eigenen BMI
-        zu ermitteln, benutzen Sie den <strong><a href="/" title="BMI Rechner">BMI-Rechner</a></strong>.</p>
-    <h2>BMI-Tabelle nach Alter</h2>
-    <div>
-        <table style="width: 250px; margin: 0 10px 10px 0; float: left;" summary="BMI-Tabelle" bgcolor="#FFFFFF">
-            <thead>
-                <tr>
-                    <th scope="col">Alter</th>
-                    <th scope="col">BMI Normalbereich</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td style="text-align: center;">19 - 24</td>
-                    <td style="text-align: center;">19 - 24</td>
-                </tr>
-                <tr>
-                    <td style="text-align: center;">25 - 34</td>
-                    <td style="text-align: center;">20 - 25</td>
-                </tr>
-                <tr>
-                    <td style="text-align: center;">35 - 44</td>
-                    <td style="text-align: center;">21 - 26</td>
-                </tr>
-                <tr>
-                    <td style="text-align: center;">45 - 54</td>
-                    <td style="text-align: center;">22 - 27</td>
-                </tr>
-                <tr>
-                    <td style="text-align: center;">55 - 64</td>
-                    <td style="text-align: center;">23 - 28</td>
-                </tr>
-                <tr>
-                    <td style="text-align: center;">&gt;= 65</td>
-                    <td style="text-align: center;">24 - 29</td>
-                </tr>
-            </tbody>
-        </table>
-<section class="container bg-light">
-    <div class="m-2">Geschlecht
-    <label>
-        <input type="radio" class="mr-2" name="geschlecht" value="frau" id="frau" checked="checked">weiblich
-    </label>
-    <label>
-        <input type="radio" class="ml-4 mr-2" name="geschlecht" value="herr" id="herr">männlich
-    </label>
-    </div>
-   <span>Gewicht:</span> 
-   <input type="number" name="gewicht" id="kg" min="1" max="400" required=""
-       placeholder="in vollen kg"
-        title="Erlaubt sind Zahlen zwischen 1 und 400">
-    <span>Grösse:</span>
-    <input type="number" name="groesse" id="groesse" min="1" max="400" required="" placeholder="in m, z. B. 1.75"
-        title="Erlaubt sind Zahlen zwischen 1 und 400">
-    <span>Alter:</span>
-    <input type="number" name="alter" id="alter" min="19" max="200" required="" placeholder="in Jahren"
-       title="Erlaubt sind Zahlen zwischen 19 und 200">
-    <div class="row mt-2">
-        <div class="col-sm-12 d-none d-sm-block">
-        <button class="btn bg-danger" type="submit" onClick="bmiRechner()">BMI Berechnen</button>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Rechner</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+        integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+        integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <h1 class="text-center">BMI Recner</h1>
+    <section class="article-body bg-bg-light">
+        <div class="flex-column p-5">
+            <p>Auf dieser Seite erhalten Sie eine Übersicht verschiedener Tabellen zu der Einordnung des BMI. Um den
+                eigenen BMI
+                zu ermitteln, benutzen Sie den <strong><a href="#" title="BMI Rechner">BMI-Rechner</a></strong>.</p>
+            <h2>BMI-Tabelle nach Alter</h2>
+
+            <table style="width: 250px; margin: 0 10px 10px 0; float: left;" summary="BMI-Tabelle" bgcolor="#FFFFFF">
+                <thead>
+                    <tr>
+                        <th scope="col">Alter</th>
+                        <th scope="col">BMI Normalbereich</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td style="text-align: center;">19 - 24</td>
+                        <td style="text-align: center;">19 - 24</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">25 - 34</td>
+                        <td style="text-align: center;">20 - 25</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">35 - 44</td>
+                        <td style="text-align: center;">21 - 26</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">45 - 54</td>
+                        <td style="text-align: center;">22 - 27</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">55 - 64</td>
+                        <td style="text-align: center;">23 - 28</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">&gt;= 65</td>
+                        <td style="text-align: center;">24 - 29</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
-    </div>
-    <div class="d-flex">
-<h2>Ihre BMI:&nbsp;</h2>
-<h2 id="wert" class="font-italic text-danger">0</h2>
-</div>
-</section>
-<section class="container bg-primary-1 mt-3">
-    <h2>BMI-Rechner - Body Mass Index berechnen</h2>
-        <p>Der BMI (Body Mass Index) ist ein Maß für die Bewertung des Körpergewichts, indem er das Gewicht in Relation zu
-        der Körpergröße setzt. Aufgrund der einfachen Messung ist die Berechnung des BMI das am häufigsten verwendete
-        Diagnoseverfahren zur Einordnung der Körperlast. Anhand des ermittelten BMI-Werts lässt sich schnell aussagen,
-        ob eine Person Normalgewicht, Übergewicht oder Untergewicht hat.</p>
-</section>
-<section class="container">
-    <h2>Formel zur Berechnung des BMI</h2>
-    <img src="https://www.tk.de/resource/image/2086920/10x7/600/420/93a7dfefc4bb24158a62930b4c86937c/QI/905879308-whr.jpg"
-        alt="" sizes="" srcset="">
-       <p> Zu Berechnung des Body Mass Indexes wird die relativ einfache BMI-Formel angewandt: BMI=(Gewicht in
-        kg)/(Körpergroße in m)².
-        Der errechnete Wert muss anschließend mit einer Wertetabelle abgeglichen werden, um auswerten zu können, ob eine
-        Person normalgewichtig, übergewichtig oder untergewichtig ist. Die WHO hat hierfür besondere Grenzen definiert,
-        wobei sich für Männer und Frauen unterschiedliche Ergebnisse ergeben. Eine solche Auswertung erhalten Sie in den
-        Ergebnissen nach dem Ausfüllen und Ausführen des BMI-Rechners</p>
-</section>
-<script src="./script.js"></script>
+        <section class="container bg-light">
+            <div class="m-2">Geschlecht
+                <label>
+                    <input type="radio" class="mr-2" name="geschlecht" value="frau" id="frau" checked="checked">weiblich
+                </label>
+                <label>
+                    <input type="radio" class="ml-4 mr-2" name="geschlecht" value="herr" id="herr">männlich
+                </label>
+            </div>
+            <span>Gewicht:</span>
+            <input type="number" name="gewicht" id="kg" min="1" max="400" required="" placeholder="in vollen kg"
+                title="Erlaubt sind Zahlen zwischen 1 und 400">
+            <span>Grösse:</span>
+            <input type="number" name="groesse" id="groesse" min="1" max="400" required=""
+                placeholder="in m, z. B. 1.75" title="Erlaubt sind Zahlen zwischen 1 und 400">
+            <span>Alter:</span>
+            <input type="number" name="alter" id="alter" min="19" max="200" required="" placeholder="in Jahren"
+                title="Erlaubt sind Zahlen zwischen 19 und 200">
+            <div class="row mt-2">
+                <div class="col-sm-12 d-none d-sm-block">
+                    <button class="btn bg-danger" type="submit" onClick="bmiRechner()">BMI Berechnen</button>
+                </div>
+            </div>
+            <div class="d-flex">
+                <h2>Ihre BMI:&nbsp;</h2>
+                <h2 id="wert" class="font-italic text-danger">0</h2>
+            </div>
+        </section>
+        <section class="container bg-primary-1 mt-3">
+            <h2>BMI-Rechner - Body Mass Index berechnen</h2>
+            <p>Der BMI (Body Mass Index) ist ein Maß für die Bewertung des Körpergewichts, indem er das Gewicht in
+                Relation zu
+                der Körpergröße setzt. Aufgrund der einfachen Messung ist die Berechnung des BMI das am häufigsten
+                verwendete
+                Diagnoseverfahren zur Einordnung der Körperlast. Anhand des ermittelten BMI-Werts lässt sich schnell
+                aussagen,
+                ob eine Person Normalgewicht, Übergewicht oder Untergewicht hat.</p>
+        </section>
+        <section class="container">
+            <h2>Formel zur Berechnung des BMI</h2>
+            <img src="https://www.tk.de/resource/image/2086920/10x7/600/420/93a7dfefc4bb24158a62930b4c86937c/QI/905879308-whr.jpg"
+                alt="" sizes="" srcset="">
+            <p> Zu Berechnung des Body Mass Indexes wird die relativ einfache BMI-Formel angewandt: BMI=(Gewicht in
+                kg)/(Körpergroße in m)².
+                Der errechnete Wert muss anschließend mit einer Wertetabelle abgeglichen werden, um auswerten zu können,
+                ob eine
+                Person normalgewichtig, übergewichtig oder untergewichtig ist. Die WHO hat hierfür besondere Grenzen
+                definiert,
+                wobei sich für Männer und Frauen unterschiedliche Ergebnisse ergeben. Eine solche Auswertung erhalten
+                Sie in den
+                Ergebnissen nach dem Ausfüllen und Ausführen des BMI-Rechners</p>
+        </section>
+    </section>
+        <script src="./script.js"></script>
 </body>
+
 </html>
