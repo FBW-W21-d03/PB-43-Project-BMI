@@ -1,6 +1,6 @@
 // HTML-Elemente, die irgendwann im JavaScript ausgelesen, oder verändert werden
 
-const alter = document.getElementById("alter"); // Eingabe Größe (<input>)
+const alter = document.getElementById("alter"); // Eingabe Alter (<input>)
 const größe = document.getElementById("größe"); // Eingabe Größe (<input>)
 const gewicht = document.getElementById("gewicht"); // Eingabe Gewicht (<input>)
 const bmi = document.getElementById("bmi"); // Ausgabe BMI (<input>)
