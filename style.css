@@ -3,28 +3,37 @@
   text-align: center;
   width: 80%;
   height: 90%;
+  margin-top: 50px;
 }
 
 body {
-  background-color: #dce3e6;
+  background-color: #dde3e6;
 }
 
 h1 {
+  font-size: 3.5rem;
   font-family: "Luxurious Roman", cursive;
   color: darkblue;
-  text-shadow: 2px 2px 3px #340ce63d, 2px -2px 3px red, -2px 2px 2px #0e0e2c, -2px -2px 3px greenyellow;
+  text-shadow: 2px 2px 3px #1e8a10e1, 2px -2px 3px #9dff00, -2px 2px 2px #4c4cf5, -2px -2px 3px #2fceff;
 }
 
 h2 {
   font-family: "Luxurious Roman", cursive;
   color: #030397;
-  text-shadow: 2px 2px 3px blue;
+  text-shadow: 2px 2px 3px #36878a;
 }
 
 p {
   font-family: "Luxurious Roman", cursive;
   color: darkblue;
-  font-size: 20px;
+  font-size: 22px;
+  width: 70%;
+  margin-left: 15%;
+}
+
+#img2 {
+  width: 70%;
+  height: auto;
 }
 
 footer {
@@ -41,11 +50,12 @@ footer {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  background-color: cadetblue;
 }
 
 input {
   color: black;
-  background-color: #dce3e6;
+  background-color: #dde3e6;
 }
 
 input:hover {
@@ -60,12 +70,16 @@ button {
   font-weight: bold;
   padding: 0.2rem 1.5rem 0.3rem 1.5rem;
   border-radius: 0.5rem;
-  border: 1px solid #72b8e0;
+  border: 1px solid #a9f3f3;
   -webkit-box-shadow: 3px 3px 10px #586969;
           box-shadow: 3px 3px 10px #586969;
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
   text-shadow: 2px 2px 2px rgba(119, 208, 228, 0.966);
   padding: 1rem;
+}
+
+#img1 {
+  border-radius: 1rem;
 }
 /*# sourceMappingURL=style.css.map */

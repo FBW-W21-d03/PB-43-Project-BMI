@@ -16,7 +16,7 @@
 </head>
 <div id="myPage">
 <body>
-    <h1>Der Body-Mass-Index</h1>
+    <h1><i class="fas fa-balance-scale"></i> Der Body-Mass-Index</h1>
     <img src="m1.jpg" alt="Body-Mass bild">
     <p> Der Body-Mass-Index (BMI) ist eine Maßzahl zur Beurteilung des Körpergewichts. Er ergibt sich aus Körpergewicht
         in Kilogramm geteilt durch die Körpergröße in Meter zum Quadrat. Allerdings ist der BMI alleine nur bedingt
@@ -25,7 +25,7 @@
         sein.
 
     </p>
-    <h2> Wie wird der BMI berechnet?</h2>
+    <h2><i class="fas fa-balance-scale-left"></i> Wie wird der BMI berechnet?</h2>
 
     <p>
 
@@ -46,7 +46,7 @@
         BMI-Rechner für Kinder und Jugendliche (inkl. Berücksichtigung der Perzentilen).
 
     </p>
-    <h2>Weshalb ist der BMI nur bedingt aussagekräftig?</h2>
+    <h2><i class="fas fa-balance-scale-right"></i>Weshalb ist der BMI nur bedingt aussagekräftig?</h2>
     <p>
 
 
@@ -58,6 +58,7 @@
 
         Weitere Informationen erhalten Sie auf der Website der Österreichischen Gesellschaft für Ernährung (ÖGE).
     </p>
+    <img id="img2" src="bmi_text_2.jpg" alt="">
     <table class="table table-success table-striped">
         <thead>
             <tr>
@@ -116,9 +117,10 @@
     </table>
 
     <footer>
-        <h3 id="wert">Wert</h3>
+        <h3 id="wert">Wertberchnung</h3>
         <input id="gewicht" type="text" placeholder="Gewicht angeben" required />
         <input id="größe" type="text" placeholder="Größe in Metern angeben" />
+        <input id="old" type="text" placeholder=" old angeben" />
         <button onclick="rechner()">BMI-Rechner</button>
         <script src="index.js"></script>
     </footer>
