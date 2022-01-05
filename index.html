@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Body-Mass-Index</title>
+    <title>&#10049 Body-Mass-Index</title>
 
 
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="index.js">
+    <link rel="icon" type="image/png" href="img/favicon.png">
     
     <!--fonts.google-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,27 +23,24 @@
 
             Der BMI errechnet sich durch folgende Formel:<br>
             
-            BMI = (Gewicht in kg) / (Höhe in Meter) / (Höhe in Meter).<br>
-          
-            Beispiel: John wiegt 80kg und ist 1,77 Meter hoch.
-            
-            BMI (John) = 80 / 1.77 / 1.77 = 25.5</p>
+            BMI = (Gewicht in kg) / (Höhe in Meter) / (Höhe in Meter).</p>
     </header>
-    <main>
-
-        <section id="forms">
-            <h2>Bodymassindex berechnen:</h2>
-            <div>
+    <main>           
+            <div id="container">
+                <h2>Bodymassindex berechnen:</h2>
                 <input type="number" size="3" name="kilogramm" placeholder="Gewicht in kg" id="kgOutput" />
 
                 <input type="number" size="3" placeholder="Höhe in Meter" name="zahlzwei" id="heightOutput" />  
 
                 <button onclick="calculate()">berechnen</button>
+           
                 <p id="ergebnis"></p>
-            </div>
-        </section>
+       </div>     
+        
     </main>
-    <footer></footer>
+    <footer>
+        <img src="img/politronlogo100.png" alt="logo">
+    </footer>
     <script src="index.js"></script>
 
 </body>

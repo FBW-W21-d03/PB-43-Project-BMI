@@ -4,21 +4,67 @@
     font-family: 'Poppins', sans-serif;
 }
 body{
-    background-color: rgba(10, 7, 26, 0.897);
+    background-image: url(img/mandala9_moasik-3.jpg);
     color: rgba(40, 196, 196, 0.795);
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+
+}
+header{
+    display: grid;
+    margin-inline: auto;
+    margin-top: 2rem;
+    padding: 3rem;
+    width: 60vw;
+    height: 15rem;
+    background-color: rgba(5, 5, 85, 0.808);
 }
 h1,h4{
-    color: rgba(48, 236, 236, 0.795);;
+    color: rgba(48, 236, 236, 0.795);
+    text-align: center;
+}
+h2{
+    margin-bottom: 1rem;
 }
 p{
     font-size: 1rem;
     font-weight: 400;
+    text-align: center;
+    
 }
 input{
     background-color: rgb(51, 231, 231);
+    padding: 1rem;
 }
 button{
     background-color: rgb(121, 241, 110);
+    padding: 1rem;
+}
+main{
+    display: flex;
+    justify-content: center;
+}
+#container {
+    display: grid;
+    justify-content: center;
+    width: 60vw;
+    height: auto;
+    margin-top: .3rem;
+    background-color: rgba(5, 5, 85, 0.808);
+    padding: 3rem;
+}
+
+#ergebnis{
+    font-size: 2rem;
+    text-align: center;
+
+    background-color: rgba(5, 5, 85, 0.808);
+}
+footer{
+    display: flex;
+    justify-content: center;
+    height: 9rem;
+    align-items: center;
 }
