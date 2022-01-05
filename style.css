@@ -1,0 +1,30 @@
+
+body {
+  background-color: blue;
+  color: white;
+}
+label {
+    display: inline-block;
+    width: 80px;
+    height: 25px;
+  }
+  button {
+    height:30px;
+    margin: 5px 0px;
+  }
+  fieldset {
+    display: inline-block;
+  }
+  #errMsg {
+    color: red;
+  }
+  #frm {
+    float: right;
+    width: 30%;
+    padding-top: 30px;
+  }
+  #imgSec {
+    flex-wrap: wrap;
+    padding: 5px 0px;
+    border: 3px solid rgb(233, 148, 122);
+  }

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="title"><h1>BMI Calculator</h1></div>
+  <section id="frm">
+    <form name="bmiForm" onsubmit="return false;">
+      <fieldset>
+        <legend>Enter your Details:</legend>
+        <label for="user">Name:</label>
+        <input type="text" id="user" size="25" required> <br />
+        <label for="gender">Gender:</label>
+        <input type="radio" id="rbMale" name="gender"> Male 
+        <input type="radio" id="rbFemale" name="gender">Female  <br />
+        <label for="age">Age:</label>
+        <input type="number" id="age" size="10" required> <br />
+        <label for="weight">Weight(kg):</label> 
+        <input type="number" id="weight" size="10" required> <br />
+        <label for="height">Height(cm):</label>
+        <input type="number" id="height" size="10" required> <br />
+        <div id="errMsg"></div>
+      </fieldset>
+      
+      <br>
+      <button onclick="calculate()">Calculate BMI</button>
+      <button type="reset" onclick="clearErr()">Reset</button>
+      <br>
+      <fieldset>
+        <legend>Result:</legend>
+        <label for="bmr">Your BMR: </label>
+        <input type="text" name="bmr" id="bmr" size="18" readonly><br />
+        <label for="bmi">Your BMI: </label>
+        <input type="text" name="bmi" id="bmi" size="10" readonly><br />
+        <label for="meaning">This Means: </label>
+        <input type="text" name="meaning" id="meaning" size="25" readonly><br/>
+      </fieldset>
+    </section>
+    <section id="imgSec">
+      <img id="img" src="https://ars.els-cdn.com/content/image/1-s2.0-S1740144509001132-fx1.jpg" height="450px">     
+    </section>
+  </form>
+   <!-- link to javascript file -->
+   <script src="BMI_javascript.js"> </script> 
+</body>
+</html>
