@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en-de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Body-Mass-Index</title>
+
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="index.js">
+    
+    <!--fonts.google-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <h1>Der Body-Mass-Index (BMI)</h1>
+        <p>BMI steht für "body-mass-index" und ist eine gebräuchliche Formel zur Gewichtsberechnung.<br>
+
+            Der BMI errechnet sich durch folgende Formel:<br>
+            
+            BMI = (Gewicht in kg) / (Höhe in Meter) / (Höhe in Meter).<br>
+          
+            Beispiel: John wiegt 80kg und ist 1,77 Meter hoch.
+            
+            BMI (John) = 80 / 1.77 / 1.77 = 25.5</p>
+    </header>
+    <main>
+
+        <section id="forms">
+            <h2>Bodymassindex berechnen:</h2>
+            <div>
+                <input type="number" size="3" name="kilogramm" placeholder="Gewicht in kg" id="kgOutput" />
+
+                <input type="number" size="3" placeholder="Höhe in Meter" name="zahlzwei" id="heightOutput" />  
+
+                <button onclick="calculate()">berechnen</button>
+                <p id="ergebnis"></p>
+            </div>
+        </section>
+    </main>
+    <footer></footer>
+    <script src="index.js"></script>
+
+</body>
+</html>

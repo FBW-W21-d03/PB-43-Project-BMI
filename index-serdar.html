@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BMI-Calculator</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+
+  <body>
+    <header>
+      <div id="tabelle"></div>
+    </header>
+    <div id="space">
+    <div id="grey">
+      <h2>
+        BMI-Rechner: BMI kostenlos ermitteln Der Body-Maß-Index (BMI) hilft
+        Ihnen einzuschätzen, ob Sie Normal-, Über- oder Untergewicht haben.
+        Bestimmen Sie ihn einfach und schnell mit diesem Rechner
+      </h2>
+      <p>
+        Das eigene Gewicht richtig einzuschätzen ist nicht immer leicht. Unser
+        BMI-Rechner liefert erste Anhaltspunkte, ob Sie wirklich abnehmen
+        sollten. Er basiert auf der Einteilung der Weltgesundheitsorganisation
+        (WHO).
+      </p>
+      <h3>
+        Was ist der BMI und welcher BMI ist ideal? Der Body-Mass-Index - kurz
+        BMI - ist ein Kennwert, der hilft, festzustellen, ob Gewicht und
+        Körpergröße in einem medizinisch gesunden Verhältnis zueinander stehen
+        oder ob die Person beispielsweise stark übergewichtig, also adipös ist.
+        Die Weltgesundheitsorganisation (WHO) teilt den BMI in sechs
+        verschiedene Klassen ein:
+      </h3>
+      <table>
+          <tr>
+        <td>Unter 18,5: Untergewicht</td>
+        <td>18,5 - 24,9: Normalgewicht</td>
+        <td>25 - 29,9: Übergewicht/ Präadipositas</td>
+        <td>30 - 34,9: Adipositas (Fettleibigkeit) Grad I</td>
+        <td>35 - 39,9: Adipositas Grad II</td>
+        <td>Über 40: Adipositas Grad III</td>
+        </tr>
+      </table>
+      <p>
+        Das individuell anzustrebende, ideale Gewicht hängt allerdings auch von
+        Alter, Geschlecht, vorliegenden Krankheiten und weiteren Angaben ab. Ihr
+        Arzt oder ihre Ärztin hilft Ihnen, das für Sie passende Gewicht
+        festzulegen.
+      </p>
+
+      <input id="kgAngabe" type="text" placeholder="KG angeben" required/>
+
+      <input id="meterAngabe" type="text" placeholder="Größe angeben" required/>
+      <button onclick="berechnen()">BMI-berechnen</button>
+
+      <input id="wert" placeholder="ergebnis" type="text"></input>
+    
+    </div>
+    </div>
+    
+
+    <script src="./index.js"></script>
+  </body>
+</html>
