@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BMI-Rechner</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="./script.js"></script>
+  </head>
+  <body>
+    <h1>BMI-Rechner</h1>
+    <div id="form">
+      <label for="größe"><strong>Größe</strong> (in m)</label>
+      <input type="number" step="0.01" name="größe" id="größe" value="1.80" />
+      <label for="gewicht"><strong>Gewicht</strong> (in kg)</label>
+      <input type="number" step="0.1" name="gewicht" id="gewicht" value="80" />
+      <label for="bmi"><strong>BMI</strong></label>
+      <input type="number" name="bmi" id="bmi" value="0" />
+      <div id="info">Übergewicht!</div>
+      <button onclick="calcBMI()">Berechnen</button>
+    </div>
+  </body>
+</html>

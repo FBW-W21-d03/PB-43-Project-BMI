@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 18px;
+}
+
+body {
+  padding: 1rem;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+#form {
+  margin-top: 2rem;
+  width: 60ch;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr 1fr 3fr;
+      grid-template-columns: 2fr 1fr 3fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+}
+
+label {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1 / 2;
+}
+
+input {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2 / 3;
+  width: 6rem;
+  background-color: #f9f9ec;
+  border: 1px solid #ccc;
+  padding: 0.5rem;
+}
+
+input:focus {
+  border: 1px solid #81d5d5;
+  outline: 0.25rem solid #81d5d5;
+}
+
+#info {
+  background-color: indianred;
+  -ms-flex-item-align: stretch;
+      -ms-grid-row-align: stretch;
+      align-self: stretch;
+  padding: 0.5rem;
+}
+
+button {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/3;
+  background-color: #81d5d5;
+  padding: 1rem 2rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #9fdfdf;
+}
+/*# sourceMappingURL=style.css.map */
