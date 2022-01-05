@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>
+            BMI Tabelle
+        </h1>
+        <p>
+            Auf dieser Seite erhalten Sie eine Übersicht verschiedener Tabellen zu der Einordnung des BMI. Um den eigenen BMI zu ermitteln, benutzen Sie den BMI-Rechner.
+        </p>
+    </header>
+    <main>
+        <h2>
+            BMI-Tabelle nach Alter
+        </h2>
+        <p>
+            Die nebenstehende Tabelle zeigt für die verscheidenen Altersgruppen die BMI-Werte innerhalb des Normalbereichs an. Sollten Ihr BMI höher sein als in der Tabelle aufgeführt, leiden sie an Übergewicht. Werte unterhalb des definierten Bereichs deuten auf Untergewicht hin.
+
+            Die Grenzen wurden von der WHO (Weltgesundheitsorganisation) festgelegt.
+            Für Jugendliche und Kinder gelten andere BMI-Werte: BMI-Rechner für Kinder und Jugendliche
+        </p>
+        <table>
+            <tr>
+             <th>ALTER</th>
+             <th>BMI NORMALBEREICH</th>
+             </tr>
+            <tr>
+             <td>19-24</td>
+             <td>19-24</td>
+            </tr>
+             <tr>
+             <td>25-34</td>
+             <td>20-25</td>
+            </tr>
+             <tr>
+             <td>35-44</td>
+             <td>21-26</td>
+            </tr>
+             <tr>
+             <td>45-54</td>
+             <td>22-27</td>
+            </tr>
+             <tr>
+             <td>55-64</td>
+             <td>23-28</td>
+            </tr>
+             <tr>
+             <td> > = 65</td>
+             <td>24-29</td>
+            </tr>
+              
+        </table>
+        <h2>
+            BMI-Tabelle für erwachsene Frauen nach Alter
+        </h2>
+        <p>
+          Frauen unterscheiden sich in Ihrem Körperbau stark von Männern. Dies äußert sich in einem schmaleren Kreuz, einem anderen Hüftbau und weniger Muskeln. Da die abweichende Anatomie einen Einfluss auf das Körpergewicht und somit auch auf den BMI hat, sind für Frauen und Männer unterschiedliche Normalbereiche des Gewichts festgelegt worden.
+          Die nebenstehende Tabelle zeigt sowol die Grenzen für den Normalbereich als auch den idealen BMI für erwachsene Frauen.  
+        </p>
+        <table>
+            <tr>
+             <th>ALTER</th>
+             <th>NORMALBEREICH DES BMI</th>
+             <th>IDEALER BMI</th>
+             </tr>
+            <tr>
+             <td>19-24</td>
+             <td>17.5-23.9</td>
+             <td>20.75</td>
+            </tr>
+             <tr>
+             <td>25-34</td>
+             <td>18.5-24,9</td>
+             <td>21.75</td>
+            </tr>
+             <tr>
+             <td>35-44</td>
+             <td>19.5-25.9</td>
+             <td>22.75</td>
+            </tr>
+             <tr>
+             <td>45-54</td>
+             <td>20.5-26.9</td>
+             <td>23.75</td>
+            </tr>
+             <tr>
+             <td>55-64</td>
+             <td>21.5-27.9</td>
+             <td>24.75</td>
+            </tr>
+             <tr>
+             <td> > = 65</td>
+             <td>22.5-28.9</td>
+             <td>25.75</td>
+            </tr>
+              
+        </table>
+        <h2>
+           BMI-Tabelle für erwachsene Männer nach Alter 
+        </h2>
+        <p>
+          Männer wiegen im Mittel mehr als Frauen gleicher Körpergröße. Dies lässt sich mit dem anderen Körperbau erklären.  
+        </p>
+        <table>
+            <tr>
+             <th>ALTER</th>
+             <th>NORMALBEREICH DES BMI</th>
+             <th>IDEALER BMI</th>
+             </tr>
+            <tr>
+             <td>19-24</td>
+             <td>18.5-24.9</td>
+             <td>21.75</td>
+            </tr>
+             <tr>
+             <td>25-34</td>
+             <td>19.5-25,9</td>
+             <td>22.75</td>
+            </tr>
+             <tr>
+             <td>35-44</td>
+             <td>20.5-26.9</td>
+             <td>23.75</td>
+            </tr>
+             <tr>
+             <td>45-54</td>
+             <td>21.5-27.9</td>
+             <td>24.75</td>
+            </tr>
+             <tr>
+             <td>55-64</td>
+             <td>22.5-28.9</td>
+             <td>25.75</td>
+            </tr>
+             <tr>
+             <td> > = 65</td>
+             <td>23.5-29.9</td>
+             <td>26.75</td>
+            </tr>
+              
+        </table>
+        <input id="weight" type="number" placeholder="weight">
+        <input id="height" type="number" placeholder="height">
+        <button onclick="calculation()">Calculation</button>
+        <span id="result"></span>
+    </main>
+    <footer></footer>
+    <script src="index.js"></script>
+</body>
+</html>
