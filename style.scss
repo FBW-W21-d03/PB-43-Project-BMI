@@ -1,4 +1,5 @@
-$color-adi3: #cc0000;
+$color-low2: #0099cc;
+$color-high3: #cc0000;
 
 * {
   margin: 0;
@@ -38,7 +39,6 @@ input:focus {
   outline: 0.25rem solid hsl(180, 50%, 67%);
 }
 #info {
-  background-color: indianred;
   align-self: stretch;
   padding: 0.5rem;
 }
