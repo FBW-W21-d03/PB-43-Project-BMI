@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <h1 id="überschrift">DER BMI-RECHNER</h1>
+    </header>
+    <main>
+      <section>
+        <h2>Was ist BMI?</h2>
+        <p>
+          Der BMI, Abkürzung für Body Mass Index (deutsch Körpermaßindex), ist
+          eine individuell berechenbare Messzahl, mit der wir unser Gewicht im
+          Verhältnis zu unserer Körpergröße bewerten. Um den BMI zu berechnen,
+          wird das Körpergewicht durch die Körpergröße zum Quadrat geteilt.So
+          können wir mit dem der BMI Rechner in welcher der drei folgendenden
+          Kategorien wir fallen: Übergewicht, Untergewicht, oder Idealgewicht.
+          Ein BMI Wert unter 19 bedeutet Untergewicht. Ein BMI-Wert zwischen 19
+          und 25 gilt als gesundes Verhältnis. Ab 25 sind wir im Übergewicht und
+          über 30 liegt eine Fettleibigkeit vor. In diesem Fall sollte unbedingt
+          ein Arzt zu Rate gezogen werden.
+        </p>
+
+        <h2>BMI Rechner: Einsatz und Bedeutung</h2>
+        <p>
+          Der BMI Rechner ist die einfachste Möglichkeit, unser Gewicht oder
+          auch Übergewicht festzustellen. Allerdings ist der BMI-Wert relativ zu
+          sehen und Faktoren wie Geschlecht, Alter und der Anteil des Fett- bzw.
+          Muskelgewebes müssen berücksichtigt werden. So kann ein trainierter
+          Sportler, der einen geringen Fettanteil hat, einen BMI-Wert haben, der
+          dann unzutreffender Weise auf Übergewicht hinweist. In höherem Alter
+          gilt zum Beispiel hingegen, dass ein leicht erhöhter BMI-Wert
+          gesundheitsfördernd sein kann. Das Ergebnis des BMI-Rechners ist also
+          immer nur ein Richtwert, den wir in Relation zu unserem Alter,
+          Geschlecht und unserer Fitness setzen sollten.
+        </p>
+        <p>
+          <strong>Hinweis:</strong>Bei Übergewicht kann regelmäßige Bewegung und
+          eine ausgewogene gemüsereiche Ernährung mit gesunden Rezepten oder
+          auch nährstoffreichen Superfoods unseren BMI-Wert deutlich verringern.
+          Der BMI bezieht die Körper-Masse (engl. mass, umgangssprachlich
+          Gewicht) auf das Quadrat der Körpergröße. Der Wert „Quadrat der
+          Körpergröße“ steht in keinem Zusammenhang mit der Körperoberfläche.
+          Der BMI ist lediglich ein grober Richtwert, da er weder Statur und
+          Geschlecht noch die individuelle Zusammensetzung der Körpermasse aus
+          Fett- und Muskelgewebe eines Menschen berücksichtigt.
+        </p>
+
+        <h2>BMI-Tabelle</h2>
+        <table>
+          <tr>
+            <th>category</th>
+            <th>BMI range - kg/m²</th>
+          </tr>
+          <tr>
+            <td>Server Thinness</td>
+            <td>< 16</td>
+          </tr>
+          <tr>
+            <td>Moderate Thinness</td>
+            <td>16-17</td>
+          </tr>
+          <tr>
+            <td>Mild Thinness</td>
+            <td>17-18.5</td>
+          </tr>
+          <tr>
+            <td>Normal</td>
+            <td>18.5-25</td>
+          </tr>
+          <tr>
+            <td>Overweight</td>
+            <td>25-35</td>
+          </tr>
+          <tr>
+            <td>Obese Class I</td>
+            <td>30-35</td>
+          </tr>
+          <tr>
+            <td>Obese Class II</td>
+            <td>35-40</td>
+          </tr>
+          <tr>
+            <td>Obese Class III</td>
+            <td>>40</td>
+          </tr>
+        </table>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <label for="height">Height:</label>
+        <input type="number" id="height" name="height" /><br /><br />
+        <label for="weight">Weight:</label>
+        <input type="number" id="weight" name="weight" /><br /><br />
+        <label for="bmi">BMI:</label>
+        <input type="number" id="bmi" />
+        <button onclick="rechnen()">SUBMIT</button>
+        <button onclick="reset()">RESET</button>
+      </div>
+    </footer>
+
+    <script src="index.js"></script>
+  </body>
+</html>

@@ -9,8 +9,8 @@ Anschließend muss die HTML Seite zwei Eingabefelder für das Gewicht und die H�
 
 Optional kannst du eine Tabelle erstellen, die den Normalbereich nach Altersgruppe anzeigt.
 
-Quelle: https://bmirechner.net/bmi-tabelle
-
+Quelle: 
+https://bmirechner.net/bmi-tabelle
 ## Aufgabenstellung - Teil 2
 Verwende CSS oder Sass, um deiner Seite Style zu verleihen.
 

@@ -1,0 +1,91 @@
+$bgColor: beige;
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+body {
+  background-color: $bgColor;
+}
+
+header {
+  background-image: url(giphy.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 60vh;
+}
+
+#überschrift {
+  text-align: center;
+  padding-top: 2rem;
+  font-size: 4rem;
+  font-weight: bolder;
+}
+
+th {
+  font-weight: bold;
+  font-size: 1rem;
+}
+th,
+td {
+  width: 80vw;
+  border: 1px solid black;
+  padding: 1vh 0;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+table {
+  border-spacing: 0;
+}
+
+h2 {
+  text-align: center;
+  font-size: 2rem;
+}
+
+P {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  padding: 15px;
+  font-size: 1.6rem;
+}
+
+footer {
+  padding: 4rem;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 1.6rem;
+  margin-left: 12rem;
+}
+
+#footerÜberschrift {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+input {
+  padding: 20px;
+  border-radius: 10px;
+  background-color: $bgColor;
+}
+
+input:hover {
+  background-color: rgb(241, 167, 82);
+}
+
+button:hover {
+  background-color: rgb(241, 167, 82);
+}
+
+button {
+  margin-left: 1rem;
+  padding: 10px;
+  background-color: $bgColor;
+  border-radius: 10px;
+}
