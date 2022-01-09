@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&family=Playfair+Display:ital,wght@1,900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/acd3859c3b.js" crossorigin="anonymous"></script>
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -12,15 +14,22 @@
         <h1>
             BMI Tabelle
         </h1>
+        
+    </header>
+    <main>
         <p>
             Auf dieser Seite erhalten Sie eine Übersicht verschiedener Tabellen zu der Einordnung des BMI. Um den eigenen BMI zu ermitteln, benutzen Sie den BMI-Rechner.
         </p>
-    </header>
-    <main>
+        <input id="weight" type="number" placeholder="weight">
+        <input id="height" type="number" placeholder="height">
+        <input id="age" type="number" placeholder="age" />
+        <button id="calculation" onclick="calculation()">Calculation</button>
+        <span id="result" placeholder="result"></span>
         <h2>
+            
             BMI-Tabelle nach Alter
         </h2>
-        <p>
+        <p id="paragraph">
             Die nebenstehende Tabelle zeigt für die verscheidenen Altersgruppen die BMI-Werte innerhalb des Normalbereichs an. Sollten Ihr BMI höher sein als in der Tabelle aufgeführt, leiden sie an Übergewicht. Werte unterhalb des definierten Bereichs deuten auf Untergewicht hin.
 
             Die Grenzen wurden von der WHO (Weltgesundheitsorganisation) festgelegt.
@@ -58,7 +67,9 @@
               
         </table>
         <h2>
+            <i class="fas fa-female"></i>
             BMI-Tabelle für erwachsene Frauen nach Alter
+            <i class="fas fa-female"></i>
         </h2>
         <p>
           Frauen unterscheiden sich in Ihrem Körperbau stark von Männern. Dies äußert sich in einem schmaleren Kreuz, einem anderen Hüftbau und weniger Muskeln. Da die abweichende Anatomie einen Einfluss auf das Körpergewicht und somit auch auf den BMI hat, sind für Frauen und Männer unterschiedliche Normalbereiche des Gewichts festgelegt worden.
@@ -103,7 +114,9 @@
               
         </table>
         <h2>
-           BMI-Tabelle für erwachsene Männer nach Alter 
+            <i class="fas fa-male"></i>
+           BMI-Tabelle für erwachsene Männer nach Alter
+           <i class="fas fa-male"></i> 
         </h2>
         <p>
           Männer wiegen im Mittel mehr als Frauen gleicher Körpergröße. Dies lässt sich mit dem anderen Körperbau erklären.  
@@ -146,12 +159,11 @@
             </tr>
               
         </table>
-        <input id="weight" type="number" placeholder="weight">
-        <input id="height" type="number" placeholder="height">
-        <button onclick="calculation()">Calculation</button>
-        <span id="result"></span>
+        
     </main>
-    <footer></footer>
+    <footer>
+        
+    </footer>
     <script src="index.js"></script>
 </body>
 </html>
